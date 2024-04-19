@@ -4,18 +4,22 @@
 
 int main(void)
 {
-    int num1, num2, num3, suma;
+    float num1, num2, suma, resta, mult, div;
 
     p("Ingrese el primer valor: ");
-    s("%d", &num1);
+    s("%f", &num1);
     p("Ingrese el segundo valor: ");
-    s("%d", &num2);
-    p("Ingrese el tercer valor: ");
-    s("%d", &num3);
+    s("%f", &num2);
 
-    suma = num1 + num2 + num3;
+    suma = num1 + num2;
+    resta = num1 - num2;
+    mult = num1 * num2;
+    div = num1 / num2;
 
-    p("%d + %d + %d = %d", num1, num2, num3, suma);
+    p("%f + %f = %f\n", num1, num2, suma);
+    p("%f - %f = %f\n", num1, num2, resta);
+    p("%f * %f = %f\n", num1, num2, mult);
+    p("%f / %f = %f\n\n", num1, num2, div);
 
     return 0;
 }
